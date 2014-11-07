@@ -1,0 +1,91 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+.content {
+	max-width: 1200px;
+	margin: 0 auto;
+	font-family: "Helvetica", sans-serif;
+}
+
+header {
+	text-align: center;
+	
+}
+
+.projects {
+	width: 100%;
+}
+.accounts {
+	width: 30%;
+	margin: 0 auto;
+}
+
+.tiles > div {
+	min-width: 49%;
+	display: inline-block;
+	transition: all 2s;
+	cursor: pointer;
+	position: relative;
+}
+
+.tiles .description {
+	transition: all 3s;
+	line-height: 0;
+	font-size:0;
+	width: 50%;
+	margin: 0 auto;
+	color: transparent;
+}
+
+.tiles > div h3 {
+	text-align: center;
+	font-size: 1.5em;
+	font-family: 'Roboto', sans-serif;
+}
+
+.tiles > .github {
+	background-image: url('images/github.svg');
+	background-size: 100% auto;
+}
+
+.tiles > .npm {
+	background-image: url('images/npm.svg');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+
+.tiles > ._R {
+	background-image: url('images/_R.svg');
+	
+}
+.active {
+	min-width: 100% !important;
+	background-color: rgba(255,0,0,0.1);
+}
+
+.active h3 {
+	
+}
+.active .description {
+	line-height: 1.5em;
+	font-size: 1.5em;
+	color: black;
+}
+
+.icon-right-top {
+	position: absolute;
+	right: 0;
+	top:0;
+}
+.js {
+	min-width: 5%;
+	background-image: url('images/js.svg');
+	background-repeat: no-repeat;
+}
+.php {
+	min-width: 5%;
+	max-width: 95px;
+	background-image: url('images/php.png');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	padding: 5px;
+}
