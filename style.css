@@ -1,8 +1,18 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto);
+
+body {
+	background-color: #93BC59;
+	background-image: url('images/bg.svg');
+	background-size: 33.333%;
+	padding: 0;
+}
 .content {
 	max-width: 1200px;
 	margin: 0 auto;
 	font-family: "Helvetica", sans-serif;
+	background-color: white;
+	z-index: 6;
+	position: relative;
 }
 
 header {
@@ -13,6 +23,9 @@ header {
 .projects {
 	width: 100%;
 }
+.projects > div:not(.active) {
+	background: rgba(89,147,188,0.2);
+}
 .accounts {
 	width: 30%;
 	margin: 0 auto;
@@ -22,8 +35,13 @@ header {
 	min-width: 49%;
 	display: inline-block;
 	transition: all 1s;
-	cursor: pointer;
+	
 	position: relative;
+}
+
+.tiles > div:not(.active) {
+	cursor: pointer;
+	
 }
 
 .tiles .description {
@@ -59,7 +77,7 @@ header {
 }
 .active {
 	min-width: 100% !important;
-	background-color: rgba(255,0,0,0.1);
+	background-color: rgba(147,188,89,0.5);
 }
 
 .active h3 {
@@ -75,17 +93,30 @@ header {
 	position: absolute;
 	right: 0;
 	top:0;
+	margin: 0;
 }
 .js {
 	min-width: 5%;
-	background-image: url('images/js.svg');
+	background-color: #D8D29F;
+	line-height: 2em;
+	text-align: center;
 	background-repeat: no-repeat;
+	
+}
+.js:after {
+	content: 'JS';
 }
 .php {
+	text-align: center;
 	min-width: 5%;
 	max-width: 95px;
-	background-image: url('images/php.png');
+	background-color: #8892BF;
+	max-height: 1em;
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	padding: 5px;
 }
+.php:after {
+	content: 'PHP'
+}
+

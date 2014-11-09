@@ -1,4 +1,4 @@
-$('.tiles.activable > div').click(function() {
+$('.tiles.activable > div').click(function(e) {
     var had = $(this).hasClass('active');
     $(this).parent().children().removeClass('active');
     if (!had)
